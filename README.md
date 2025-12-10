@@ -23,7 +23,7 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 return {
-  "jaswdr/nvim-opencode-complete",
+  "jaswdr/opencode-completion.nvim",
   dependencies = { "nvim-lua/plenary.nvim", "nvim-treesitter/nvim-treesitter" },
   config = function()
     require("opencode-completion").setup()
