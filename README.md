@@ -22,13 +22,14 @@ A Neovim plugin that integrates with OpenCode server for AI-powered code complet
 Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
-{
-  'jaswdr/opencode-completion.nvim',
-  dependencies = { 'nvim-lua/plenary.nvim', 'nvim-treesitter/nvim-treesitter' },
+return {
+  "jaswdr/nvim-opencode-complete",
+  dependencies = { "nvim-lua/plenary.nvim", "nvim-treesitter/nvim-treesitter" },
   config = function()
-    require('opencode-completion').setup()
+    require("opencode-completion").setup()
   end,
 }
+
 ```
 
 ## Usage
